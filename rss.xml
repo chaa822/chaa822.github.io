@@ -1,111 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.Wanted | Feed]]></title><description><![CDATA[Jaeoh Jeong's Development Blog]]></description><link>https://chaa822.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 16 May 2022 07:19:54 GMT</lastBuildDate><item><title><![CDATA[Borderless Blog Theme 소개]]></title><description><![CDATA[본 블로그를 이루고 있는 테마에 대해 소개하고자 한다. 지금까지 나는 tistory, velog 등 쉽고 빠르게 접근할 수 있는 블로그 서비스들을 개인 저장소겸 블로그로 이용해왔다. 그러다 회사에서 맥을 사용하게 돼서 하이퍼 터미널 검색 도중 백준호…]]></description><link>https://chaa822.github.io/introduce-blog/</link><guid isPermaLink="false">https://chaa822.github.io/introduce-blog/</guid><pubDate>Mon, 16 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f4a3b995d9d1a06dbe98d630f348e6e4/efb68/screenshot1.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABYklEQVQoz62S32rCMBTG83xjDzHYSyjiYGPPIV6OvclG7nVsav+lrk2aTpGmbaLZOSHVTpDdeOCjTc7hO79+lHzO5zdZnr0WRTnhQk4j9j2NWeaUpLlTnGbuvlPXd+cknQYxm0RB9PI1m9+SOI4f7ZWKReEzYSwdNG1r27ZVcKc77fd7nee5zrJMl+WPVkrpqqp0Xde6P+dVo2HC2Iik6/UQD03TYOMA5bbhs1LKgoHVWuNCJ3w/+L4XlnGEjI0J53zoDbRvOkNjjOVc2LIsLZAdhQvsmSGOO8IkGRMp5dBH8McQn/CZR/UJLxlCPCfDc0LI0BFyIex2u7UKyP4jLIrisuE5IZohIUZxyVAI4QwHfqDBcH3ABgsIDRCaQkojZWl2u51RqjbdXE+NNxwRCP3hWv8hwD2RKIruIKOPzWbzBqIoOFNYRJfLFV0slnS1CmgQBDQMQwoUtJvr6R00g/79L4EQQOGqetf0AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;screenshot1&quot;
-        title=&quot;screenshot1&quot;
-        src=&quot;/static/f4a3b995d9d1a06dbe98d630f348e6e4/fcda8/screenshot1.png&quot;
-        srcset=&quot;/static/f4a3b995d9d1a06dbe98d630f348e6e4/12f09/screenshot1.png 148w,
-/static/f4a3b995d9d1a06dbe98d630f348e6e4/e4a3f/screenshot1.png 295w,
-/static/f4a3b995d9d1a06dbe98d630f348e6e4/fcda8/screenshot1.png 590w,
-/static/f4a3b995d9d1a06dbe98d630f348e6e4/efc66/screenshot1.png 885w,
-/static/f4a3b995d9d1a06dbe98d630f348e6e4/c83ae/screenshot1.png 1180w,
-/static/f4a3b995d9d1a06dbe98d630f348e6e4/efb68/screenshot1.png 2032w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;본 블로그를 이루고 있는 테마에 대해 소개하고자 한다.&lt;/p&gt;
-&lt;p&gt;지금까지 나는 tistory, velog 등 쉽고 빠르게 접근할 수 있는 블로그 서비스들을 개인 저장소겸 블로그로 이용해왔다.&lt;/p&gt;
-&lt;p&gt;그러다 회사에서 맥을 사용하게 돼서 하이퍼 터미널 검색 도중 백준호님의 블로그를 구경하게 됐다.&lt;/p&gt;
-&lt;p&gt;블로그가 하나부터 열까지 마음에 쏙 들어서 링크를 타고 깃허브에 갔더니 테마를 쉽게 사용할 수 있도록 &lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;문서화&lt;/a&gt;까지 해놓으신걸 보고, 블로그를 만들게 되었다.&lt;/p&gt;
-&lt;p&gt;이 테마를 공유해주신 백준호님에게 감사의 말씀 드리고 싶다.&lt;/p&gt;
-&lt;br/&gt;
-&lt;br/&gt;
-&lt;p&gt;적용하면서 documents에서 찾을 수 없었던 내용이 있는데&lt;/p&gt;
-&lt;p&gt;먼저 해당 테마를 적용하고 싶다면 상기 링크의 문서를 참고하여 백준호님의 &lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github repository&lt;/a&gt;에서 Fork/Clone 해서 적용할 수 있다.&lt;/p&gt;
-&lt;p&gt;나는 repository의 이름, _config.js를 설정하고 deploy했더니 아래와 같이 블로그가 안나오고 README가 나왔다 -.-&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a54f22136fcf49c10435c19450f145a9/efb68/screenshot2.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABmUlEQVQoz62Ry0rDQBRA8zP2YVpbqIhSutOF4kcI/kSlKCh+R8lS/ARXLV1VBLFPbTd9iKZtHk1bZybOJNeZJJU+EF144XCZe+cebjJSKpk4Smcyt/sHh/ndvbQSCkcVWZaVeCzm5XBkU4lE/Sx6q2yEIkp8K5lPbe/cyLHEsVQsFi9HIw1a7Ta0Wm2oNxpQKj/BXenRy9VqDSqVKtRqdWg0mmuI+83mM6jqAAqF4rWEMc6CH5hDBVNEqWog+oE/KSaEIoSpG/R+gAiBbZOcpGnamTg4jkM5rus4MJ5ieNNmQCkTdQ/GGFDOYg56fMRhwqHr+rlkGIYndF2X+skFTTfgXR3CdDYDQggghLicQnDvG5gPAHhC0zSXhUETNHMKndchqIMRWNbE22QuWIxA/LvQMHTodjveZmJDIVzdzr/6R+GQv7puWlzkrmyztF9wXhdmgwGbwwSE2AzblGFMmPjh87oIvjFDhDJk84cI6mLW/zIjJ3HrBfxTjMfjK6nX651MJpMXy7LKnIff4Hc5PC/X7znNfr9/+gUWVQ8m+IuxmQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;screenshot2&quot;
-        title=&quot;screenshot2&quot;
-        src=&quot;/static/a54f22136fcf49c10435c19450f145a9/fcda8/screenshot2.png&quot;
-        srcset=&quot;/static/a54f22136fcf49c10435c19450f145a9/12f09/screenshot2.png 148w,
-/static/a54f22136fcf49c10435c19450f145a9/e4a3f/screenshot2.png 295w,
-/static/a54f22136fcf49c10435c19450f145a9/fcda8/screenshot2.png 590w,
-/static/a54f22136fcf49c10435c19450f145a9/efc66/screenshot2.png 885w,
-/static/a54f22136fcf49c10435c19450f145a9/c83ae/screenshot2.png 1180w,
-/static/a54f22136fcf49c10435c19450f145a9/efb68/screenshot2.png 2032w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;혹시나 나와 같이 블로그가 안나오고 README가 나온다면 아래 설정을 확인해 봐야 한다.&lt;/p&gt;
-&lt;h4 id=&quot;repository--settings--pages-이동--branch--develop를-master로-변경&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#repository--settings--pages-%EC%9D%B4%EB%8F%99--branch--develop%EB%A5%BC-master%EB%A1%9C-%EB%B3%80%EA%B2%BD&quot; aria-label=&quot;repository  settings  pages 이동  branch  develop를 master로 변경 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;repository &gt; settings &gt; Pages 이동 : branch &gt; develop를 master로 변경&lt;/h4&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b059288d805c6ee755adbc03384930ef/159fb/screenshot3.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAB9ElEQVQ4y41TXW/bMAz0//9vfRm2bliBrUCbxHJkWbasb1k3Uq6dAtvDBBwYKOKRx6O7lBKsc+BTa20x5wwp7xBCwHuP/zqcS+h8CFitPcnoFqVsGLSHnAz0PMMR6bpawgprGRbLYloeR2tdy6+NkB73vYDWGtu2NcJYKl5m4Id0+C4MnsWCbxS/3jO+DAnPY8arKfhN+LXs8XUFdAK6ECMmPZ9V+KRccBkXKJdOjA0F0tI4XIYKtRGYDCyEOVUEaqRjKUIMO9mH6lIKRjliGO5YSLKUEkopGGPgSHIKHi4UelexJz3G1SSP9PgxQzKFCG/9gJ4K8fwWs9K8HP0OCGnDdj6t5+x2T4hQaYPbrW+S2YxMchk3IrvQPZNFGksg87i4ixtSqf8wee+0G8lJpaZGEmP6IMzUoWgdMtFBGFr0CETs/X7vqUDM9dycjh8yoVn3dTgkcIL/IGO507zAkHnOeTItg/eXwSPgjs+1YanD/d6MOFrn9dFEoCaNSEn839H5I+bH3OsnQq7Ia7Pv4ONrsZYJFWZyWetP4ELz2mbrvWsKCpEfpxH2Yl/sg2wjG9/eI96uEy5C4ipGMune0A8S70JBagvjMxbaT4ZxsXXf/e0UmttPTxk/af1frhqXYcYgFQRhOKAMRhMxLuQBxcmENts/uz3xzf67hgkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;screenshot3&quot;
-        title=&quot;screenshot3&quot;
-        src=&quot;/static/b059288d805c6ee755adbc03384930ef/fcda8/screenshot3.png&quot;
-        srcset=&quot;/static/b059288d805c6ee755adbc03384930ef/12f09/screenshot3.png 148w,
-/static/b059288d805c6ee755adbc03384930ef/e4a3f/screenshot3.png 295w,
-/static/b059288d805c6ee755adbc03384930ef/fcda8/screenshot3.png 590w,
-/static/b059288d805c6ee755adbc03384930ef/efc66/screenshot3.png 885w,
-/static/b059288d805c6ee755adbc03384930ef/159fb/screenshot3.png 1019w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hyper 소개]]></title><description><![CDATA[나는 본래 개발을 시작한 뒤로 쭈우우욱 윈도우를(..) 사용했다. 그러다 이번에 들어온 회사에서 맥을 사용하게 됐고
-기본 터미널이 마음에 들지 않아 대체할 터미널을 찾던 중에 hyper를 알게 됐다. 설치 방법은 백준호님의 블로그에서 확인할 수 있으…]]></description><link>https://chaa822.github.io/hyper-terminal/</link><guid isPermaLink="false">https://chaa822.github.io/hyper-terminal/</guid><pubDate>Mon, 16 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.Wanted | Feed]]></title><description><![CDATA[Jaeoh Jeong's Development Blog]]></description><link>https://chaa822.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 16 May 2022 07:24:06 GMT</lastBuildDate><item><title><![CDATA[Hyper 소개]]></title><description><![CDATA[나는 본래 개발을 시작한 뒤로 쭈우우욱 윈도우를(..) 사용했다. 그러다 이번에 들어온 회사에서 맥을 사용하게 됐고
+기본 터미널이 마음에 들지 않아 대체할 터미널을 찾던 중에 hyper를 알게 됐다. 설치 방법은 백준호님의 블로그에서 확인할 수 있으…]]></description><link>https://chaa822.github.io/hyper-terminal/</link><guid isPermaLink="false">https://chaa822.github.io/hyper-terminal/</guid><pubDate>Tue, 17 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
@@ -305,4 +199,110 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
     &lt;span class=&quot;token comment&quot;&gt;// Example&lt;/span&gt;
     &lt;span class=&quot;token comment&quot;&gt;// &apos;window:devtools&apos;: &apos;cmd+alt+o&apos;,&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Borderless Blog Theme 소개]]></title><description><![CDATA[본 블로그를 이루고 있는 테마에 대해 소개하고자 한다. 지금까지 나는 tistory, velog 등 쉽고 빠르게 접근할 수 있는 블로그 서비스들을 개인 저장소겸 블로그로 이용해왔다. 그러다 회사에서 맥을 사용하게 돼서 하이퍼 터미널 검색 도중 백준호…]]></description><link>https://chaa822.github.io/introduce-blog/</link><guid isPermaLink="false">https://chaa822.github.io/introduce-blog/</guid><pubDate>Mon, 16 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f4a3b995d9d1a06dbe98d630f348e6e4/efb68/screenshot1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABYklEQVQoz62S32rCMBTG83xjDzHYSyjiYGPPIV6OvclG7nVsav+lrk2aTpGmbaLZOSHVTpDdeOCjTc7hO79+lHzO5zdZnr0WRTnhQk4j9j2NWeaUpLlTnGbuvlPXd+cknQYxm0RB9PI1m9+SOI4f7ZWKReEzYSwdNG1r27ZVcKc77fd7nee5zrJMl+WPVkrpqqp0Xde6P+dVo2HC2Iik6/UQD03TYOMA5bbhs1LKgoHVWuNCJ3w/+L4XlnGEjI0J53zoDbRvOkNjjOVc2LIsLZAdhQvsmSGOO8IkGRMp5dBH8McQn/CZR/UJLxlCPCfDc0LI0BFyIex2u7UKyP4jLIrisuE5IZohIUZxyVAI4QwHfqDBcH3ABgsIDRCaQkojZWl2u51RqjbdXE+NNxwRCP3hWv8hwD2RKIruIKOPzWbzBqIoOFNYRJfLFV0slnS1CmgQBDQMQwoUtJvr6R00g/79L4EQQOGqetf0AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;screenshot1&quot;
+        title=&quot;screenshot1&quot;
+        src=&quot;/static/f4a3b995d9d1a06dbe98d630f348e6e4/fcda8/screenshot1.png&quot;
+        srcset=&quot;/static/f4a3b995d9d1a06dbe98d630f348e6e4/12f09/screenshot1.png 148w,
+/static/f4a3b995d9d1a06dbe98d630f348e6e4/e4a3f/screenshot1.png 295w,
+/static/f4a3b995d9d1a06dbe98d630f348e6e4/fcda8/screenshot1.png 590w,
+/static/f4a3b995d9d1a06dbe98d630f348e6e4/efc66/screenshot1.png 885w,
+/static/f4a3b995d9d1a06dbe98d630f348e6e4/c83ae/screenshot1.png 1180w,
+/static/f4a3b995d9d1a06dbe98d630f348e6e4/efb68/screenshot1.png 2032w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;본 블로그를 이루고 있는 테마에 대해 소개하고자 한다.&lt;/p&gt;
+&lt;p&gt;지금까지 나는 tistory, velog 등 쉽고 빠르게 접근할 수 있는 블로그 서비스들을 개인 저장소겸 블로그로 이용해왔다.&lt;/p&gt;
+&lt;p&gt;그러다 회사에서 맥을 사용하게 돼서 하이퍼 터미널 검색 도중 백준호님의 블로그를 구경하게 됐다.&lt;/p&gt;
+&lt;p&gt;블로그가 하나부터 열까지 마음에 쏙 들어서 링크를 타고 깃허브에 갔더니 테마를 쉽게 사용할 수 있도록 &lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;문서화&lt;/a&gt;까지 해놓으신걸 보고, 블로그를 만들게 되었다.&lt;/p&gt;
+&lt;p&gt;이 테마를 공유해주신 백준호님에게 감사의 말씀 드리고 싶다.&lt;/p&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;p&gt;적용하면서 documents에서 찾을 수 없었던 내용이 있는데&lt;/p&gt;
+&lt;p&gt;먼저 해당 테마를 적용하고 싶다면 상기 링크의 문서를 참고하여 백준호님의 &lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github repository&lt;/a&gt;에서 Fork/Clone 해서 적용할 수 있다.&lt;/p&gt;
+&lt;p&gt;나는 repository의 이름, _config.js를 설정하고 deploy했더니 아래와 같이 블로그가 안나오고 README가 나왔다 -.-&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a54f22136fcf49c10435c19450f145a9/efb68/screenshot2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABmUlEQVQoz62Ry0rDQBRA8zP2YVpbqIhSutOF4kcI/kSlKCh+R8lS/ARXLV1VBLFPbTd9iKZtHk1bZybOJNeZJJU+EF144XCZe+cebjJSKpk4Smcyt/sHh/ndvbQSCkcVWZaVeCzm5XBkU4lE/Sx6q2yEIkp8K5lPbe/cyLHEsVQsFi9HIw1a7Ta0Wm2oNxpQKj/BXenRy9VqDSqVKtRqdWg0mmuI+83mM6jqAAqF4rWEMc6CH5hDBVNEqWog+oE/KSaEIoSpG/R+gAiBbZOcpGnamTg4jkM5rus4MJ5ieNNmQCkTdQ/GGFDOYg56fMRhwqHr+rlkGIYndF2X+skFTTfgXR3CdDYDQggghLicQnDvG5gPAHhC0zSXhUETNHMKndchqIMRWNbE22QuWIxA/LvQMHTodjveZmJDIVzdzr/6R+GQv7puWlzkrmyztF9wXhdmgwGbwwSE2AzblGFMmPjh87oIvjFDhDJk84cI6mLW/zIjJ3HrBfxTjMfjK6nX651MJpMXy7LKnIff4Hc5PC/X7znNfr9/+gUWVQ8m+IuxmQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;screenshot2&quot;
+        title=&quot;screenshot2&quot;
+        src=&quot;/static/a54f22136fcf49c10435c19450f145a9/fcda8/screenshot2.png&quot;
+        srcset=&quot;/static/a54f22136fcf49c10435c19450f145a9/12f09/screenshot2.png 148w,
+/static/a54f22136fcf49c10435c19450f145a9/e4a3f/screenshot2.png 295w,
+/static/a54f22136fcf49c10435c19450f145a9/fcda8/screenshot2.png 590w,
+/static/a54f22136fcf49c10435c19450f145a9/efc66/screenshot2.png 885w,
+/static/a54f22136fcf49c10435c19450f145a9/c83ae/screenshot2.png 1180w,
+/static/a54f22136fcf49c10435c19450f145a9/efb68/screenshot2.png 2032w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;혹시나 나와 같이 블로그가 안나오고 README가 나온다면 아래 설정을 확인해 봐야 한다.&lt;/p&gt;
+&lt;h4 id=&quot;repository--settings--pages-이동--branch--develop를-master로-변경&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#repository--settings--pages-%EC%9D%B4%EB%8F%99--branch--develop%EB%A5%BC-master%EB%A1%9C-%EB%B3%80%EA%B2%BD&quot; aria-label=&quot;repository  settings  pages 이동  branch  develop를 master로 변경 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;repository &gt; settings &gt; Pages 이동 : branch &gt; develop를 master로 변경&lt;/h4&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b059288d805c6ee755adbc03384930ef/159fb/screenshot3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAB9ElEQVQ4y41TXW/bMAz0//9vfRm2bliBrUCbxHJkWbasb1k3Uq6dAtvDBBwYKOKRx6O7lBKsc+BTa20x5wwp7xBCwHuP/zqcS+h8CFitPcnoFqVsGLSHnAz0PMMR6bpawgprGRbLYloeR2tdy6+NkB73vYDWGtu2NcJYKl5m4Id0+C4MnsWCbxS/3jO+DAnPY8arKfhN+LXs8XUFdAK6ECMmPZ9V+KRccBkXKJdOjA0F0tI4XIYKtRGYDCyEOVUEaqRjKUIMO9mH6lIKRjliGO5YSLKUEkopGGPgSHIKHi4UelexJz3G1SSP9PgxQzKFCG/9gJ4K8fwWs9K8HP0OCGnDdj6t5+x2T4hQaYPbrW+S2YxMchk3IrvQPZNFGksg87i4ixtSqf8wee+0G8lJpaZGEmP6IMzUoWgdMtFBGFr0CETs/X7vqUDM9dycjh8yoVn3dTgkcIL/IGO507zAkHnOeTItg/eXwSPgjs+1YanD/d6MOFrn9dFEoCaNSEn839H5I+bH3OsnQq7Ia7Pv4ONrsZYJFWZyWetP4ELz2mbrvWsKCpEfpxH2Yl/sg2wjG9/eI96uEy5C4ipGMune0A8S70JBagvjMxbaT4ZxsXXf/e0UmttPTxk/af1frhqXYcYgFQRhOKAMRhMxLuQBxcmENts/uz3xzf67hgkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;screenshot3&quot;
+        title=&quot;screenshot3&quot;
+        src=&quot;/static/b059288d805c6ee755adbc03384930ef/fcda8/screenshot3.png&quot;
+        srcset=&quot;/static/b059288d805c6ee755adbc03384930ef/12f09/screenshot3.png 148w,
+/static/b059288d805c6ee755adbc03384930ef/e4a3f/screenshot3.png 295w,
+/static/b059288d805c6ee755adbc03384930ef/fcda8/screenshot3.png 590w,
+/static/b059288d805c6ee755adbc03384930ef/efc66/screenshot3.png 885w,
+/static/b059288d805c6ee755adbc03384930ef/159fb/screenshot3.png 1019w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
