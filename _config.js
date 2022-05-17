@@ -17,7 +17,7 @@ module.exports = {
   company: '',
   location: 'Korea',
   email: 'chaa822@naver.com',
-  website: 'https://github.com/chaa822/chaa822.github.io',
+  website: 'https://chaa822.oopy.io',
   linkedin: '',
   facebook: '',
   instagram: '',
