@@ -30,7 +30,7 @@ module.exports = {
 
   /** Optional */
   googleAnalytics: 'G-DH3QMX2WVE',     // Google Analytics TrackingID. ex.'UA-123456789-0'
-  googleSearchConsole: '', // content value in HTML tag of google search console ownership verification. ex.'w-K42k14_I4ApiQKuVPbCRVV-GxlrqWxYoqO94KMbKo'
+  googleSearchConsole: 'HSyMimZK8Pczn2RjTjVvsJJsLH70tYWiRYGw_VCC9VM', // content value in HTML tag of google search console ownership verification. ex.'w-K42k14_I4ApiQKuVPbCRVV-GxlrqWxYoqO94KMbKo'
   googleAdsenseSlot: '',   // Google Adsense Slot. ex.'5214956675'
   googleAdsenseClient: '', // Google Adsense Client. ex.'ca-pub-5001380215831339'
 };
