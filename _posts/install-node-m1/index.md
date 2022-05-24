@@ -1,6 +1,6 @@
 ---
 title: MacBook Pro M1 노드 14 이하 버전 설치하기
-date: 2022-05-22
+date: 2022-01-29
 tags:
 - settings
 ---

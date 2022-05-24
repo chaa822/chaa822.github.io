@@ -1,6 +1,6 @@
 ---
 title: Github 잔디가 적용되지 않을 때
-date: 2022-05-23
+date: 2022-02-12
 tags:
 - github
 ---

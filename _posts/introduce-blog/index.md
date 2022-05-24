@@ -1,8 +1,8 @@
 ---
-title: Borderless Blog Theme 소개
-date: 2022-05-16
+title: Github Blog Borderless Blog Theme
+date: 2022-01-01
 tags:
-- github-blog
+- github
 ---
 
 ![](screenshot1.png)

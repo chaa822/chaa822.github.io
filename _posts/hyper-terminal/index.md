@@ -1,8 +1,8 @@
 ---
-title: Hyper 소개
-date: 2022-05-17
+title: Hyper Terminal
+date: 2022-01-07
 tags:
-- hyper-terminal
+- hyper
 ---
 
 ![](screenshot.png)
