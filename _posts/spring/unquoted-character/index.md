@@ -52,6 +52,10 @@ ResponseEntity<String> response = restTemplate.exchange(
                                             new HttpEntity<>("", httpHeaders),
                                             String.class);
 
-return objectMapperForAllowUnquotedControlChars.readValue(result.getBody()
+if( response.getBody() == null ){
+    Collections.EMPTY_LIST();
+}
+
+return objectMapperForAllowUnquotedControlChars.readValue(response.getBody()
                                             , new TypeReference<List<CustomDTO>>(){});
 ```
