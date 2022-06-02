@@ -15,6 +15,48 @@ tags:
 설치 방법은 [백준호님의 블로그](https://junhobaik.github.io/mac-terminal-setting/)에서 확인할 수 있으며,<br/>
 이 글에선 설정 내용이 띄엄띄엄 나오므로, 참조를 위해 나의 설정 내용을 추가한다.
 
+
+zshrc 설정
+```bash
+vi ~/.zshrc
+```
+```bash
+source ~/.zplug/init.zsh
+
+# Plugins
+zplug "lib/completion",   from:oh-my-zsh
+zplug "lib/key-bindings", from:oh-my-zsh
+zplug "lib/directories",  from:oh-my-zsh
+
+zplug "plugins/git",      from:oh-my-zsh
+zplug "plugins/autojump", from:oh-my-zsh, frozen:1
+
+zplug "zsh-users/zsh-completions",              defer:0
+zplug "zsh-users/zsh-autosuggestions",          defer:1, on:"zsh-users/zsh-completions"
+zplug "zsh-users/zsh-syntax-highlighting",      defer:1, on:"zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-history-substring-search", defer:2, on:"zsh-users/zsh-syntax-highlighting"
+
+zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
+
+zplug "djui/alias-tips"
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Then, source plugins and add commands to $PATH
+zplug load
+```
+
+
+hyper.js 설정
+```bash
+vi ~/.hyper.js
+```
 ```javascript
 "use strict";
 // Future versions of Hyper may add additional config options,
