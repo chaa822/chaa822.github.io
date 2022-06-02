@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.Wanted | Feed]]></title><description><![CDATA[Jaeoh Jeong's Development Blog]]></description><link>https://chaa822.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 02 Jun 2022 02:10:58 GMT</lastBuildDate><item><title><![CDATA[unquoted character ((ctrl-char code 13))]]></title><description><![CDATA[외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다. api를 호출하는 코드는 대충 다음과 같다. 특정한 파라미터도 없었고, 브라우저에서 domain url로 붙어도 json data가 보이는 지극히…]]></description><link>https://chaa822.github.io/unquoted-character/</link><guid isPermaLink="false">https://chaa822.github.io/unquoted-character/</guid><pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.Wanted | Feed]]></title><description><![CDATA[Jaeoh Jeong's Development Blog]]></description><link>https://chaa822.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 02 Jun 2022 02:15:26 GMT</lastBuildDate><item><title><![CDATA[unquoted character ((ctrl-char code 13))]]></title><description><![CDATA[외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다. api를 호출하는 코드는 대충 다음과 같다. 특정한 파라미터도 없었고, 브라우저에서 domain url로 붙어도 json data가 보이는 지극히…]]></description><link>https://chaa822.github.io/unquoted-character/</link><guid isPermaLink="false">https://chaa822.github.io/unquoted-character/</guid><pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다.&lt;/p&gt;
 &lt;p&gt;api를 호출하는 코드는 대충 다음과 같다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
@@ -156,25 +156,25 @@ Settings → Appearance > System Settings → Reopen projects on startup Spring 
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4da5987f24ec7130a81fcdd1382fdeed/ad997/screenshot1.png&quot;
+    href=&quot;/static/d8d7046c3b837a07f77296da891fff85/ad997/screenshot1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 80.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAADU0lEQVQ4y51Uy27bRhRlLMvWw5H4lkRS5PD9sN6RpTopisJpgywaAl4U2WTRAt0V7bbf1P5GtMlvFKrVTdEPiMjbMyNnkW0FHFzOaHjnnHPvpfSrGTYiJ7pTRt69JnulprLS0PxSVVipyqxUsOe5k9J1ilLp43/s66pfDsyoHBgnmHp4D9wpit6QzEbXSIPF30H8jOxhQfaooNEgJ288JebOKGBzytMNpfFarPm+YxWkqyEZWgSENBxkZBrRQ6fdsyX8LBx6uFnd0XV+e2TuvMbBeuxkdRwtasdOa13za0MPBMCu1gBV9mpVEThiTari7lutri8S+t7soci2pMp+BdSa4teOldVZ8qz2vSnitp5eP6/TeFPH4boO/VUdsKUACBwDtuKs981mi0mNxqUFugew47IqLsvQI8iIKE3WkDyjKJhTHC4pjpaUAD6DbDsXsK2sGjsFP7+/aLaZdPakaQ3N5DApbsn35pWpJ6DvUxqtaZJtaDSETzqDR76IAzMgTXVJ7jukyGOOike5b+/b7S4TksdOfphe34J2XrnithgHXXIdziKjgREiUXiKgGnwpAxJeKIxbPJ4YiS8YpLcH1jffP3D4d3b3+j+zS/Vm9c/07d3P3KTIW9FRb4FNigYIhh/WufpDaxYUhQuK8+dojOS/cUFJJ+ft1Hl+WF784rWq5dVkT1HeyyFHFSamHctYoq24i3kOhOwjMSFuuaBqVcBOO98knxmjYbJYTZ5QVl6U8VgZeghXhiT53L5IV5k8DIWcvVTi1C/Z3PfOCru58lDSG422xaa8xCwBW/camAkZOqRSDgptqKyY7uAvAWFACTi3IR4ZU09wOV+xSNYog87TGpddi1dDQ686009rnjkU8Bv5UWxRgn8SZGMt8tcgHkzAQcXof8qF9MDlejDSya1W1cW5vYvXRWJPiIeccERHh4hA3A+ez7BPnba+rHfs/j6Y6djULdj/Pn0SoaHZ+e2a03+HRqZmE1Tix9nNBDmm48YPAIfAbDOabV4BY/5EASUJ19S6K//QUHE6Kmxt/zDUNkHuWe/V/rOjkPm6Nmfge/3no52GITdd69/2kXBaqdr4/dfvfj+w+2m/B25TMmStSd46ImFJBn/E/zd/nz6xdl/w39ls7J+6a8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 80.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAADbUlEQVQ4y51UTW/jVBT1NE2bpJ3E305sx37+iB27+Z6moQygUYHRLGikLkazYQESOwRb/gf/Ahb8AZaTzfwB1oBCwwYhAbvGvpzrlsVsiXR0/V6e7zvn3HstfW1GtdiNr5Sef6PJ/lpTxdrQgrWqiLUqi7WCPd8bXffd/Frp4H/s62qwtsx4bRn3MPXoBrhSFL0mmbUTIw1nv4eDJ+R0c3J6OfWsjPz+mIQ3oVBMKR+uaJhcUOBPq33XzklXIzK0GIioaw3JNOLbVrPtSPjZOHS7XFzRWXa5F960xMGy7w6LQTwrXSctVNn7GfhJ14K/wY40NcCeX6pKhT3WpCrettE4CaqEgT+5ZRaqzAeDUlOC0rXTcpg8AavxPktXP0wn73+bDpa/JPGSomBRhGJeMkBgH4oFs97W6w0h1WrHNujuwI7SwXnBMplhr5tA5jkkTyiJF9UzxySel4GAbCer4NjDAv5Cdrw9qjeFdPCobnfNZDfKL9mjwtQHBfsTeKMfR+nyL7s3IEMXd4YR3CEWlhlCslfKHZcUuc8oOModZ9tsnohKct/NduOzS9DOCs/Ny66VUKft/OO5WeE6Q7KMqLTMiGMF0+CkAkk4UZ/95MRIeCokuWPZHz37bPfpq2/o5vqr4vrFl/Tx1edsdiUxz1Zlnl2gYCtU+4LXxOssXVIczimO5oXvjdEZyfboCJIPD5uo8nS3Wj6n88WHRT58F0bP+UaudCn8M+KYoq24hTx3BJYxV5V0zQdTvwBw3v1P8oGNAuwmo6c0TJdolQU8i/BCn3yPzY7woqBed1DJ1e9bhC1h3xgF+3nvISTX600bzbkLxYwbubCMhEw9rhKO8hUN4jn1nRzyZhQBkIhzI+LKmnqIy4OCI1iiD1tCahyf2Loa7rjrucIcucp8K4pCdi+BPymSzSmAZIbwJxVcXIT+KzxMD1SiD4+F1Gyc2pjb33S1SnSHuMcFe3i4hwzAfev5Hs6+1dT3nbbN67tWy6CTlvHr41MZHh4cOp49+rNrDKvZNLXBw4yGlfnmA6wH4CMA1hktZs/hMYYAcrPkPUzP+R8oSDV66sCff2+o4o3cdl4rHXfDkBlt5y3wfvtxb4NB2Hzy4otNHC42utZ//cHTl28uL9bfIZcp2bL2CA/taiFJxv8Ev9uZjt85+Bd8QmQOUKWgogAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;screenshot1&quot;
         title=&quot;screenshot1&quot;
-        src=&quot;/static/4da5987f24ec7130a81fcdd1382fdeed/fcda8/screenshot1.png&quot;
-        srcset=&quot;/static/4da5987f24ec7130a81fcdd1382fdeed/12f09/screenshot1.png 148w,
-/static/4da5987f24ec7130a81fcdd1382fdeed/e4a3f/screenshot1.png 295w,
-/static/4da5987f24ec7130a81fcdd1382fdeed/fcda8/screenshot1.png 590w,
-/static/4da5987f24ec7130a81fcdd1382fdeed/efc66/screenshot1.png 885w,
-/static/4da5987f24ec7130a81fcdd1382fdeed/ad997/screenshot1.png 1012w&quot;
+        src=&quot;/static/d8d7046c3b837a07f77296da891fff85/fcda8/screenshot1.png&quot;
+        srcset=&quot;/static/d8d7046c3b837a07f77296da891fff85/12f09/screenshot1.png 148w,
+/static/d8d7046c3b837a07f77296da891fff85/e4a3f/screenshot1.png 295w,
+/static/d8d7046c3b837a07f77296da891fff85/fcda8/screenshot1.png 590w,
+/static/d8d7046c3b837a07f77296da891fff85/efc66/screenshot1.png 885w,
+/static/d8d7046c3b837a07f77296da891fff85/ad997/screenshot1.png 1012w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
