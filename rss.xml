@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.Wanted | Feed]]></title><description><![CDATA[Jaeoh Jeong's Development Blog]]></description><link>https://chaa822.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 02 Jun 2022 02:04:41 GMT</lastBuildDate><item><title><![CDATA[unquoted character ((ctrl-char code 13))]]></title><description><![CDATA[외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다. api를 호출하는 코드는 대충 다음과 같다. 특정한 파라미터도 없었고, 브라우저에서 domain url로 붙어도 json data가 보이는 지극히…]]></description><link>https://chaa822.github.io/unquoted-character/</link><guid isPermaLink="false">https://chaa822.github.io/unquoted-character/</guid><pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.Wanted | Feed]]></title><description><![CDATA[Jaeoh Jeong's Development Blog]]></description><link>https://chaa822.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 02 Jun 2022 02:10:58 GMT</lastBuildDate><item><title><![CDATA[unquoted character ((ctrl-char code 13))]]></title><description><![CDATA[외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다. api를 호출하는 코드는 대충 다음과 같다. 특정한 파라미터도 없었고, 브라우저에서 domain url로 붙어도 json data가 보이는 지극히…]]></description><link>https://chaa822.github.io/unquoted-character/</link><guid isPermaLink="false">https://chaa822.github.io/unquoted-character/</guid><pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다.&lt;/p&gt;
 &lt;p&gt;api를 호출하는 코드는 대충 다음과 같다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
@@ -138,13 +138,49 @@ def&amp;quot;
 v14.17.0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;출처 :
 &lt;a href=&quot;https://caileb.tistory.com/206&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://caileb.tistory.com/206&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[intellij 기본 설정]]></title><description><![CDATA[이 포스팅은 지속적으로 업데이트합니다. 시작 화면 설정 프로그램 실행 시 프로젝트 선택 창 노출하도록
-Settings → Appearance > System Settings → Reopen projects on startup Plugins GitTo…]]></description><link>https://chaa822.github.io/intellij-basic-settings/</link><guid isPermaLink="false">https://chaa822.github.io/intellij-basic-settings/</guid><pubDate>Tue, 18 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;이-포스팅은-지속적으로-업데이트합니다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%B4-%ED%8F%AC%EC%8A%A4%ED%8C%85%EC%9D%80-%EC%A7%80%EC%86%8D%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%A9%EB%8B%88%EB%8B%A4&quot; aria-label=&quot;이 포스팅은 지속적으로 업데이트합니다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이 포스팅은 지속적으로 업데이트합니다.&lt;/h3&gt;
+Settings → Appearance > System Settings → Reopen projects on startup Spring Gradle…]]></description><link>https://chaa822.github.io/intellij-basic-settings/</link><guid isPermaLink="false">https://chaa822.github.io/intellij-basic-settings/</guid><pubDate>Tue, 18 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;이-포스팅은-지속적으로-업데이트합니다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%B4-%ED%8F%AC%EC%8A%A4%ED%8C%85%EC%9D%80-%EC%A7%80%EC%86%8D%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%A9%EB%8B%88%EB%8B%A4&quot; aria-label=&quot;이 포스팅은 지속적으로 업데이트합니다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이 포스팅은 지속적으로 업데이트합니다.&lt;/h3&gt;
 &lt;br/&gt;
 &lt;br/&gt;
 &lt;h4 id=&quot;시작-화면-설정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%8B%9C%EC%9E%91-%ED%99%94%EB%A9%B4-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;시작 화면 설정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;시작 화면 설정&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;프로그램 실행 시 프로젝트 선택 창 노출하도록
 &lt;br/&gt;Settings → Appearance &gt; System Settings → Reopen projects on startup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;spring&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#spring&quot; aria-label=&quot;spring permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spring&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Gradle 사용 시
+&lt;br/&gt;Build and run using, Run tests using → IntelliJ IDEA
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4da5987f24ec7130a81fcdd1382fdeed/ad997/screenshot1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 80.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAADU0lEQVQ4y51Uy27bRhRlLMvWw5H4lkRS5PD9sN6RpTopisJpgywaAl4U2WTRAt0V7bbf1P5GtMlvFKrVTdEPiMjbMyNnkW0FHFzOaHjnnHPvpfSrGTYiJ7pTRt69JnulprLS0PxSVVipyqxUsOe5k9J1ilLp43/s66pfDsyoHBgnmHp4D9wpit6QzEbXSIPF30H8jOxhQfaooNEgJ288JebOKGBzytMNpfFarPm+YxWkqyEZWgSENBxkZBrRQ6fdsyX8LBx6uFnd0XV+e2TuvMbBeuxkdRwtasdOa13za0MPBMCu1gBV9mpVEThiTari7lutri8S+t7soci2pMp+BdSa4teOldVZ8qz2vSnitp5eP6/TeFPH4boO/VUdsKUACBwDtuKs981mi0mNxqUFugew47IqLsvQI8iIKE3WkDyjKJhTHC4pjpaUAD6DbDsXsK2sGjsFP7+/aLaZdPakaQ3N5DApbsn35pWpJ6DvUxqtaZJtaDSETzqDR76IAzMgTXVJ7jukyGOOike5b+/b7S4TksdOfphe34J2XrnithgHXXIdziKjgREiUXiKgGnwpAxJeKIxbPJ4YiS8YpLcH1jffP3D4d3b3+j+zS/Vm9c/07d3P3KTIW9FRb4FNigYIhh/WufpDaxYUhQuK8+dojOS/cUFJJ+ft1Hl+WF784rWq5dVkT1HeyyFHFSamHctYoq24i3kOhOwjMSFuuaBqVcBOO98knxmjYbJYTZ5QVl6U8VgZeghXhiT53L5IV5k8DIWcvVTi1C/Z3PfOCru58lDSG422xaa8xCwBW/camAkZOqRSDgptqKyY7uAvAWFACTi3IR4ZU09wOV+xSNYog87TGpddi1dDQ686009rnjkU8Bv5UWxRgn8SZGMt8tcgHkzAQcXof8qF9MDlejDSya1W1cW5vYvXRWJPiIeccERHh4hA3A+ez7BPnba+rHfs/j6Y6djULdj/Pn0SoaHZ+e2a03+HRqZmE1Tix9nNBDmm48YPAIfAbDOabV4BY/5EASUJ19S6K//QUHE6Kmxt/zDUNkHuWe/V/rOjkPm6Nmfge/3no52GITdd69/2kXBaqdr4/dfvfj+w+2m/B25TMmStSd46ImFJBn/E/zd/nz6xdl/w39ls7J+6a8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;screenshot1&quot;
+        title=&quot;screenshot1&quot;
+        src=&quot;/static/4da5987f24ec7130a81fcdd1382fdeed/fcda8/screenshot1.png&quot;
+        srcset=&quot;/static/4da5987f24ec7130a81fcdd1382fdeed/12f09/screenshot1.png 148w,
+/static/4da5987f24ec7130a81fcdd1382fdeed/e4a3f/screenshot1.png 295w,
+/static/4da5987f24ec7130a81fcdd1382fdeed/fcda8/screenshot1.png 590w,
+/static/4da5987f24ec7130a81fcdd1382fdeed/efc66/screenshot1.png 885w,
+/static/4da5987f24ec7130a81fcdd1382fdeed/ad997/screenshot1.png 1012w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&quot;plugins&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#plugins&quot; aria-label=&quot;plugins permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Plugins&lt;/h4&gt;
 &lt;ul&gt;
