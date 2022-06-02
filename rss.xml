@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.Wanted | Feed]]></title><description><![CDATA[Jaeoh Jeong's Development Blog]]></description><link>https://chaa822.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 01 Jun 2022 14:59:59 GMT</lastBuildDate><item><title><![CDATA[unquoted character ((ctrl-char code 13))]]></title><description><![CDATA[외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다. api를 호출하는 코드는 대충 다음과 같다. 특정한 파라미터도 없었고, 브라우저에서 domain url로 붙어도 json data가 보이는 지극히…]]></description><link>https://chaa822.github.io/unquoted-character/</link><guid isPermaLink="false">https://chaa822.github.io/unquoted-character/</guid><pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.Wanted | Feed]]></title><description><![CDATA[Jaeoh Jeong's Development Blog]]></description><link>https://chaa822.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 02 Jun 2022 02:04:41 GMT</lastBuildDate><item><title><![CDATA[unquoted character ((ctrl-char code 13))]]></title><description><![CDATA[외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다. api를 호출하는 코드는 대충 다음과 같다. 특정한 파라미터도 없었고, 브라우저에서 domain url로 붙어도 json data가 보이는 지극히…]]></description><link>https://chaa822.github.io/unquoted-character/</link><guid isPermaLink="false">https://chaa822.github.io/unquoted-character/</guid><pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다.&lt;/p&gt;
 &lt;p&gt;api를 호출하는 코드는 대충 다음과 같다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
@@ -137,13 +137,17 @@ def&amp;quot;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;node -v
 v14.17.0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;출처 :
-&lt;a href=&quot;https://caileb.tistory.com/206&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://caileb.tistory.com/206&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[intellij 기본 설정]]></title><description><![CDATA[이 포스팅은 지속적으로 업데이트합니다. Plugins GitToolBox Key Promoter X CodeGlance Pro Rainbow Brackets Quick File Preview MyBatisX JPA Buddy Dracula Pro P…]]></description><link>https://chaa822.github.io/intellij-basic-settings/</link><guid isPermaLink="false">https://chaa822.github.io/intellij-basic-settings/</guid><pubDate>Tue, 18 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;이-포스팅은-지속적으로-업데이트합니다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%B4-%ED%8F%AC%EC%8A%A4%ED%8C%85%EC%9D%80-%EC%A7%80%EC%86%8D%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%A9%EB%8B%88%EB%8B%A4&quot; aria-label=&quot;이 포스팅은 지속적으로 업데이트합니다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이 포스팅은 지속적으로 업데이트합니다.&lt;/h3&gt;
+&lt;a href=&quot;https://caileb.tistory.com/206&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://caileb.tistory.com/206&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[intellij 기본 설정]]></title><description><![CDATA[이 포스팅은 지속적으로 업데이트합니다. 시작 화면 설정 프로그램 실행 시 프로젝트 선택 창 노출하도록
+Settings → Appearance > System Settings → Reopen projects on startup Plugins GitTo…]]></description><link>https://chaa822.github.io/intellij-basic-settings/</link><guid isPermaLink="false">https://chaa822.github.io/intellij-basic-settings/</guid><pubDate>Tue, 18 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;이-포스팅은-지속적으로-업데이트합니다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%B4-%ED%8F%AC%EC%8A%A4%ED%8C%85%EC%9D%80-%EC%A7%80%EC%86%8D%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%A9%EB%8B%88%EB%8B%A4&quot; aria-label=&quot;이 포스팅은 지속적으로 업데이트합니다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이 포스팅은 지속적으로 업데이트합니다.&lt;/h3&gt;
 &lt;br/&gt;
 &lt;br/&gt;
-0. 시작 화면 설정 : 프로그램 실행 시 프로젝트 선택 창 노출하도록
-   &lt;br/&gt;Settings → Appearance &gt; System Settings → Reopen projects on startup
-&lt;ol start=&quot;99&quot;&gt;
-&lt;li&gt;Plugins&lt;/li&gt;
+&lt;h4 id=&quot;시작-화면-설정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%8B%9C%EC%9E%91-%ED%99%94%EB%A9%B4-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;시작 화면 설정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;시작 화면 설정&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;프로그램 실행 시 프로젝트 선택 창 노출하도록
+&lt;br/&gt;Settings → Appearance &gt; System Settings → Reopen projects on startup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;plugins&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#plugins&quot; aria-label=&quot;plugins permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Plugins&lt;/h4&gt;
+&lt;ul&gt;
 &lt;li&gt;GitToolBox&lt;/li&gt;
 &lt;li&gt;Key Promoter X&lt;/li&gt;
 &lt;li&gt;CodeGlance Pro&lt;/li&gt;
@@ -156,7 +160,7 @@ v14.17.0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;li&gt;Pokemon Progress&lt;/li&gt;
 &lt;li&gt;Atom Material Icons&lt;/li&gt;
 &lt;li&gt;Material Theme UI Lite&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Hyper Terminal]]></title><description><![CDATA[나는 본래 개발을 시작한 뒤로 쭈우우욱 윈도우를(..) 사용했다. 그러다 이번에 들어온 회사에서 맥을 사용하게 됐고
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Hyper Terminal]]></title><description><![CDATA[나는 본래 개발을 시작한 뒤로 쭈우우욱 윈도우를(..) 사용했다. 그러다 이번에 들어온 회사에서 맥을 사용하게 됐고
 기본 터미널이 마음에 들지 않아 대체할 터미널을 찾던 중에 hyper를 알게 됐다. 설치 방법은 백준호님의 블로그에서 확인할 수 있으…]]></description><link>https://chaa822.github.io/hyper-terminal/</link><guid isPermaLink="false">https://chaa822.github.io/hyper-terminal/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
@@ -193,6 +197,39 @@ v14.17.0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 기본 터미널이 마음에 들지 않아 대체할 터미널을 찾던 중에 hyper를 알게 됐다.&lt;/p&gt;
 &lt;p&gt;설치 방법은 &lt;a href=&quot;https://junhobaik.github.io/mac-terminal-setting/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;백준호님의 블로그&lt;/a&gt;에서 확인할 수 있으며,&lt;br/&gt;
 이 글에선 설정 내용이 띄엄띄엄 나오므로, 참조를 위해 나의 설정 내용을 추가한다.&lt;/p&gt;
+&lt;p&gt;zshrc 설정&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;vi&lt;/span&gt; ~/.zshrc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;source&lt;/span&gt; ~/.zplug/init.zsh
+
+&lt;span class=&quot;token comment&quot;&gt;# Plugins&lt;/span&gt;
+zplug &lt;span class=&quot;token string&quot;&gt;&quot;lib/completion&quot;&lt;/span&gt;,   from:oh-my-zsh
+zplug &lt;span class=&quot;token string&quot;&gt;&quot;lib/key-bindings&quot;&lt;/span&gt;, from:oh-my-zsh
+zplug &lt;span class=&quot;token string&quot;&gt;&quot;lib/directories&quot;&lt;/span&gt;,  from:oh-my-zsh
+
+zplug &lt;span class=&quot;token string&quot;&gt;&quot;plugins/git&quot;&lt;/span&gt;,      from:oh-my-zsh
+zplug &lt;span class=&quot;token string&quot;&gt;&quot;plugins/autojump&quot;&lt;/span&gt;, from:oh-my-zsh, frozen:1
+
+zplug &lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-completions&quot;&lt;/span&gt;,              defer:0
+zplug &lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-autosuggestions&quot;&lt;/span&gt;,          defer:1, on:&lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-completions&quot;&lt;/span&gt;
+zplug &lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-syntax-highlighting&quot;&lt;/span&gt;,      defer:1, on:&lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-autosuggestions&quot;&lt;/span&gt;
+zplug &lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-history-substring-search&quot;&lt;/span&gt;, defer:2, on:&lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-syntax-highlighting&quot;&lt;/span&gt;
+
+zplug &lt;span class=&quot;token string&quot;&gt;&quot;denysdovhan/spaceship-prompt&quot;&lt;/span&gt;, use:spaceship.zsh, from:github, as:theme
+
+zplug &lt;span class=&quot;token string&quot;&gt;&quot;djui/alias-tips&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# Install plugins if there are plugins that have not been installed&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; zplug check --verbose&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;token builtin class-name&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Install? [y/N]: &quot;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; -q&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+        &lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; zplug &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# Then, source plugins and add commands to $PATH&lt;/span&gt;
+zplug load&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;hyper.js 설정&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;vi&lt;/span&gt; ~/.hyper.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&quot;use strict&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;// Future versions of Hyper may add additional config options,&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;// which will not automatically be merged into this file.&lt;/span&gt;
