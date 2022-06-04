@@ -32,5 +32,5 @@ tags:
 * Power mode 2
 * Pokemon Progress
 * Atom Material Icons
-* Material Theme UI Lite
+* Material Theme UI
 
