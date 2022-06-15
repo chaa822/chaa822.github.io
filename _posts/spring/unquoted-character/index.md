@@ -56,7 +56,7 @@ ResponseEntity<String> response = restTemplate.exchange(
                                             String.class);
 
 if( response.getBody() == null ){
-    Collections.EMPTY_LIST();
+    return Collections.EMPTY_LIST();
 }
 
 return objectMapperForAllowUnquotedControlChars.readValue(response.getBody()
