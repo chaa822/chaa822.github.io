@@ -1,8 +1,10 @@
 ---
-title: Github Blog Borderless Blog Theme
+title: Github Blog - Borderless Blog Theme
 date: 2022-01-01
 tags:
 - github
+keywords:
+- Github Blog Borderless Theme
 ---
 
 ![](screenshot1.png)

@@ -3,6 +3,9 @@ title: unquoted character ((ctrl-char code 13))
 date: 2022-05-20
 tags:
 - spring
+keywords:
+- unquoted character
+- ctrl-char code 13
 ---
 
 외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다.

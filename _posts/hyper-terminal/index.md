@@ -3,6 +3,9 @@ title: Hyper Terminal
 date: 2022-01-07
 tags:
 - hyper
+keywords:
+- Hyper
+- Hyper Terminal
 ---
 
 ![](screenshot.png)

@@ -3,6 +3,8 @@ title: intellij 기본 설정
 date: 2022-01-18
 tags:
 - settings
+keywords:
+- intellij 기본 설정
 ---
 
 ### 이 포스팅은 지속적으로 업데이트합니다.

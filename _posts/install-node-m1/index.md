@@ -3,6 +3,8 @@ title: MacBook Pro M1 노드 14 이하 버전 설치하기
 date: 2022-01-29
 tags:
 - settings
+keywords:
+- Macbook Pro M1 노드 14 이하 버전 설치
 ---
 
 원래 나는 맥북에어를 약 1년간 사용해왔는데, 인텔리제이를 돌렸더니 멈췄다. (젠장 -_-)

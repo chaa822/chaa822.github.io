@@ -1,8 +1,11 @@
 ---
-title: Github 잔디가 적용되지 않을 때
+title: Github 잔디가 적용되지 않을 때 (git name 초기화)
 date: 2022-02-12
 tags:
 - github
+keywords:
+- Github 잔디가 적용되지 않을 때
+- git name 초기화
 ---
 
 어제 분명히 커밋 & 푸시를 했는데.. 오늘 보니까 잔디에 적용이 안 돼 있다. ~~(개빡치네)~~
