@@ -20,11 +20,11 @@ keywords:
   <br/>Build and run using, Run tests using → IntelliJ IDEA
 ![](screenshot1.png)
 
-#### MyBatis Mapper
-* Settings > Editor > Inspections > SQL - No data sources configured, SQL dialect detection 체크 해제
+#### MyBatis
+* Mapper XML에 'No data sources are configured..' 경고가 뜰 경우
+<br/>Settings > Editor > Inspections > SQL - No data sources configured, SQL dialect detection 체크 해제
 
 #### Plugins
-* GitToolBox
 * Key Promoter X
 * CodeGlance Pro
 * Rainbow Brackets
