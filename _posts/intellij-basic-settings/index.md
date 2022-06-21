@@ -20,6 +20,9 @@ keywords:
   <br/>Build and run using, Run tests using → IntelliJ IDEA
 ![](screenshot1.png)
 
+#### MyBatis Mapper
+* Settings > Editor > Inspections > SQL - No data sources configured, SQL dialect detection 체크 해제
+
 #### Plugins
 * GitToolBox
 * Key Promoter X
