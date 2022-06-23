@@ -1,4 +1,101 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.Wanted | Feed]]></title><description><![CDATA[Jaeoh Jeong's Development Blog]]></description><link>https://chaa822.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 21 Jun 2022 05:33:18 GMT</lastBuildDate><item><title><![CDATA[unquoted character ((ctrl-char code 13))]]></title><description><![CDATA[외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다. api를 호출하는 코드는 대충 다음과 같다. 특정한 파라미터도 없었고, 브라우저에서 domain url로 붙어도 json data가 보이는 지극히…]]></description><link>https://chaa822.github.io/unquoted-character/</link><guid isPermaLink="false">https://chaa822.github.io/unquoted-character/</guid><pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dev.Wanted | Feed]]></title><description><![CDATA[Jaeoh Jeong's Development Blog]]></description><link>https://chaa822.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 23 Jun 2022 09:01:27 GMT</lastBuildDate><item><title><![CDATA[더 자바, Java8 - 인터페이스 기본 메소드와 스태틱 메소드]]></title><description><![CDATA[인터페이스 생성, 메서드 정의 인터페이스를 구현할 클래스 생성, 메서드 구현 인터페이스에 새로운 메서드를 추가할 경우, 인터페이스를 구현한 모든 클래스에서 오류가 발생한다.
+이럴 경우, default 키워드를 이용해 오류를 발생 시키지 않고 추가할 …]]></description><link>https://chaa822.github.io/thejava-java8_5/</link><guid isPermaLink="false">https://chaa822.github.io/thejava-java8_5/</guid><pubDate>Thu, 23 Jun 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;인터페이스 생성, 메서드 정의&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;printName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;인터페이스를 구현할 클래스 생성, 메서드 구현&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;DefaultFoo&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;printName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;인터페이스에 새로운 메서드를 추가할 경우, 인터페이스를 구현한 모든 클래스에서 오류가 발생한다.
+&lt;br/&gt;이럴 경우, default 키워드를 이용해 오류를 발생 시키지 않고 추가할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;printName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;printNameUpperCase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;DefaultFoo&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;printName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    
+    &lt;span class=&quot;token comment&quot;&gt;// 파라미터로 name을 받는다고 가정&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;DefaultFoo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token comment&quot;&gt;// getName 메서드 구현&lt;/span&gt;
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token class-name&quot;&gt;Foo&lt;/span&gt; foo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;DefaultFoo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;TheJava8&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        foo&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;printName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        foo&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;printNameUpperCase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;default 메서드 또한 구현하는 클래스에서 재정의할 수도 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;DefaultFoo&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;printNameUpperCase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;하지만 인터페이스에서 제공하는 default 기능이 모든 구현체에서 정상적으로 동작하리라는 보장이 없다.
+&lt;br/&gt;(어떻게 구현했는지 모르기 때문에)
+&lt;br/&gt;
+&lt;br/&gt;
+따라서 오류 방지를 위해 최소한의 노력으로 아래와 같이 @ImplSpec을 이용해 문서화를 진행해야한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;printName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    
+    &lt;span class=&quot;token comment&quot;&gt;/**
+     * @ImplSpec 이 구현체는 getName()으로 가져온 문자를 대문자로 출력한다.
+     */&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;printNameUpperCase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Object가 제공하는 기능은 기본 메소드로 제공할 수 없다&lt;/p&gt;
+&lt;p&gt;출처 :
+&lt;br/&gt; 인프런 강의 - 더 자바, Java 8 (백기선)
+&lt;br/&gt;&lt;a href=&quot;https://www.inflearn.com/course/the-java-java8&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.inflearn.com/course/the-java-java8&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[더 자바, Java8 - 람다 표현식]]></title><description><![CDATA[출처 :
+ 인프런 강의 - 더 자바, Java 8 (백기선)
+https://www.inflearn.com/course/the-java-java8]]></description><link>https://chaa822.github.io/thejava-java8_3/</link><guid isPermaLink="false">https://chaa822.github.io/thejava-java8_3/</guid><pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;출처 :
+&lt;br/&gt; 인프런 강의 - 더 자바, Java 8 (백기선)
+&lt;br/&gt;&lt;a href=&quot;https://www.inflearn.com/course/the-java-java8&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.inflearn.com/course/the-java-java8&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[더 자바, Java8 - 함수형 인터페이스와 람다 표현식]]></title><description><![CDATA[출처 :
+ 인프런 강의 - 더 자바, Java 8 (백기선)
+https://www.inflearn.com/course/the-java-java8]]></description><link>https://chaa822.github.io/thejava-java8_1/</link><guid isPermaLink="false">https://chaa822.github.io/thejava-java8_1/</guid><pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;출처 :
+&lt;br/&gt; 인프런 강의 - 더 자바, Java 8 (백기선)
+&lt;br/&gt;&lt;a href=&quot;https://www.inflearn.com/course/the-java-java8&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.inflearn.com/course/the-java-java8&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[더 자바, Java8 - 메소드 레퍼런스]]></title><description><![CDATA[출처 :
+ 인프런 강의 - 더 자바, Java 8 (백기선)
+https://www.inflearn.com/course/the-java-java8]]></description><link>https://chaa822.github.io/thejava-java8_4/</link><guid isPermaLink="false">https://chaa822.github.io/thejava-java8_4/</guid><pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;출처 :
+&lt;br/&gt; 인프런 강의 - 더 자바, Java 8 (백기선)
+&lt;br/&gt;&lt;a href=&quot;https://www.inflearn.com/course/the-java-java8&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.inflearn.com/course/the-java-java8&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[더 자바, Java8 - 자바에서 제공하는 함수형 인터페이스]]></title><description><![CDATA[출처 :
+ 인프런 강의 - 더 자바, Java 8 (백기선)
+https://www.inflearn.com/course/the-java-java8]]></description><link>https://chaa822.github.io/thejava-java8_2/</link><guid isPermaLink="false">https://chaa822.github.io/thejava-java8_2/</guid><pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;출처 :
+&lt;br/&gt; 인프런 강의 - 더 자바, Java 8 (백기선)
+&lt;br/&gt;&lt;a href=&quot;https://www.inflearn.com/course/the-java-java8&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.inflearn.com/course/the-java-java8&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[unquoted character ((ctrl-char code 13))]]></title><description><![CDATA[외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다. api를 호출하는 코드는 대충 다음과 같다. 특정한 파라미터도 없었고, 브라우저에서 domain url로 붙어도 json data가 보이는 지극히…]]></description><link>https://chaa822.github.io/unquoted-character/</link><guid isPermaLink="false">https://chaa822.github.io/unquoted-character/</guid><pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;외부 api를 조회하여 데이터를 끌어오는 스케쥴러가 있었는데, 일부 데이터가 누락되는 이슈가 발생했다.&lt;/p&gt;
 &lt;p&gt;api를 호출하는 코드는 대충 다음과 같다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
@@ -200,344 +297,4 @@ Settings → Appearance > System Settings → Reopen projects on startup Spring 
 &lt;li&gt;Pokemon Progress&lt;/li&gt;
 &lt;li&gt;Atom Material Icons&lt;/li&gt;
 &lt;li&gt;Material Theme UI&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Hyper Terminal]]></title><description><![CDATA[나는 본래 개발을 시작한 뒤로 쭈우우욱 윈도우를(..) 사용했다. 그러다 이번에 들어온 회사에서 맥을 사용하게 됐고
-기본 터미널이 마음에 들지 않아 대체할 터미널을 찾던 중에 hyper를 알게 됐다. 설치 방법은 백준호님의 블로그에서 확인할 수 있으…]]></description><link>https://chaa822.github.io/hyper-terminal/</link><guid isPermaLink="false">https://chaa822.github.io/hyper-terminal/</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b62de8599b6ccd8ecc78bfe9d20c4fbb/ec3e2/screenshot.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 64.86486486486486%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAB9UlEQVQ4y62QTWvUUBSGY7kIKsJM7mc+biZpyzS0g7WMbmyaURGpKyUzC6FUF4J0IQgKrrpW0OpGd+4GN7p1KWah4rgUYvf9AX5Mk6nalhJP7GTo2CmINvDwXk7u+3C4ykslVRbLs5NX7Bk/YP50XdS8BvU9OHsNIFB972pp1puT52YCNl2rc28XAffOXuanT6R0+YDyU2kif3T8g+WYWxJrsUW1jhR6p8S30xS845gWnI01QfiaRgXAe+hUJJyyrVFqfVox7x9V0oM30aTttqgpNy0q2hblsWlosa2L2ICUNo0Zx7GKcUIoiTHphxDSLhK8XmJ69MpZKCjpxSYaF/K9itUNTEn790VMYrWbGYTQmFIgz37acHfdBmFYmQfh3D3k6rIFw034uTqgkGQJ0iwT2Cif5axCd8PmWhSeDEB44w5yDWOgMC/vlOwpFCIKa+dBuHgNuabeJ+yWehv+nZBH4YVTIFy6hFyptVT8nxtqLArrx0D41EeuxXcIs0IfyXbmgt6sS1eog3B+BIQvKmjMYm+LmPyAh/8MfN2Db7DdIL5A93tJpx/D6xyErwWacOgyYywVnP4TWXdEkpU3t4+A8N2hoTPH8a2pMn5cdfFSdQw/2oWLH06V1SeV4WKzMlx49gfNCaf4vFouPLjbGDqs7Pf3CwDYIA/idIEiAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;screenshot&quot;
-        title=&quot;screenshot&quot;
-        src=&quot;/static/b62de8599b6ccd8ecc78bfe9d20c4fbb/fcda8/screenshot.png&quot;
-        srcset=&quot;/static/b62de8599b6ccd8ecc78bfe9d20c4fbb/12f09/screenshot.png 148w,
-/static/b62de8599b6ccd8ecc78bfe9d20c4fbb/e4a3f/screenshot.png 295w,
-/static/b62de8599b6ccd8ecc78bfe9d20c4fbb/fcda8/screenshot.png 590w,
-/static/b62de8599b6ccd8ecc78bfe9d20c4fbb/efc66/screenshot.png 885w,
-/static/b62de8599b6ccd8ecc78bfe9d20c4fbb/ec3e2/screenshot.png 997w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;나는 본래 개발을 시작한 뒤로 쭈우우욱 윈도우를(..) 사용했다.&lt;/p&gt;
-&lt;p&gt;그러다 이번에 들어온 회사에서 맥을 사용하게 됐고&lt;br/&gt;
-기본 터미널이 마음에 들지 않아 대체할 터미널을 찾던 중에 hyper를 알게 됐다.&lt;/p&gt;
-&lt;p&gt;설치 방법은 &lt;a href=&quot;https://junhobaik.github.io/mac-terminal-setting/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;백준호님의 블로그&lt;/a&gt;에서 확인할 수 있으며,&lt;br/&gt;
-이 글에선 설정 내용이 띄엄띄엄 나오므로, 참조를 위해 나의 설정 내용을 추가한다.&lt;/p&gt;
-&lt;p&gt;zshrc 설정&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;vi&lt;/span&gt; ~/.zshrc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;source&lt;/span&gt; ~/.zplug/init.zsh
-
-&lt;span class=&quot;token comment&quot;&gt;# Plugins&lt;/span&gt;
-zplug &lt;span class=&quot;token string&quot;&gt;&quot;lib/completion&quot;&lt;/span&gt;,   from:oh-my-zsh
-zplug &lt;span class=&quot;token string&quot;&gt;&quot;lib/key-bindings&quot;&lt;/span&gt;, from:oh-my-zsh
-zplug &lt;span class=&quot;token string&quot;&gt;&quot;lib/directories&quot;&lt;/span&gt;,  from:oh-my-zsh
-
-zplug &lt;span class=&quot;token string&quot;&gt;&quot;plugins/git&quot;&lt;/span&gt;,      from:oh-my-zsh
-zplug &lt;span class=&quot;token string&quot;&gt;&quot;plugins/autojump&quot;&lt;/span&gt;, from:oh-my-zsh, frozen:1
-
-zplug &lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-completions&quot;&lt;/span&gt;,              defer:0
-zplug &lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-autosuggestions&quot;&lt;/span&gt;,          defer:1, on:&lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-completions&quot;&lt;/span&gt;
-zplug &lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-syntax-highlighting&quot;&lt;/span&gt;,      defer:1, on:&lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-autosuggestions&quot;&lt;/span&gt;
-zplug &lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-history-substring-search&quot;&lt;/span&gt;, defer:2, on:&lt;span class=&quot;token string&quot;&gt;&quot;zsh-users/zsh-syntax-highlighting&quot;&lt;/span&gt;
-
-zplug &lt;span class=&quot;token string&quot;&gt;&quot;denysdovhan/spaceship-prompt&quot;&lt;/span&gt;, use:spaceship.zsh, from:github, as:theme
-
-zplug &lt;span class=&quot;token string&quot;&gt;&quot;djui/alias-tips&quot;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;# Install plugins if there are plugins that have not been installed&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; zplug check --verbose&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
-    &lt;span class=&quot;token builtin class-name&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Install? [y/N]: &quot;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; -q&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
-        &lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; zplug &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;# Then, source plugins and add commands to $PATH&lt;/span&gt;
-zplug load&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;hyper.js 설정&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;vi&lt;/span&gt; ~/.hyper.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&quot;use strict&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// Future versions of Hyper may add additional config options,&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// which will not automatically be merged into this file.&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// See https://hyper.is#cfg for all currently supported options.&lt;/span&gt;
-module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    config&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// choose either `&apos;stable&apos;` for receiving highly polished,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// or `&apos;canary&apos;` for less polished but more frequent updates&lt;/span&gt;
-        updateChannel&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;stable&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// default font size in pixels for all tabs&lt;/span&gt;
-        fontSize&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// font family with optional fallbacks&lt;/span&gt;
-        fontFamily&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Hack, Droid Sans Mono for Powerline, Menlo, &quot;DejaVu Sans Mono&quot;, Consolas, &quot;Lucida Console&quot;, monospace&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// default font weight: &apos;normal&apos; or &apos;bold&apos;&lt;/span&gt;
-        fontWeight&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;normal&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// font weight for bold characters: &apos;normal&apos; or &apos;bold&apos;&lt;/span&gt;
-        fontWeightBold&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;bold&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// line height as a relative unit&lt;/span&gt;
-        lineHeight&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// letter spacing as a relative unit&lt;/span&gt;
-        letterSpacing&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)&lt;/span&gt;
-        cursorColor&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;rgba(248,28,229,0.8)&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// terminal text color under BLOCK cursor&lt;/span&gt;
-        cursorAccentColor&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#000&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// `&apos;BEAM&apos;` for |, `&apos;UNDERLINE&apos;` for _, `&apos;BLOCK&apos;` for █&lt;/span&gt;
-        cursorShape&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;BLOCK&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// set to `true` (without backticks and without quotes) for blinking cursor&lt;/span&gt;
-        cursorBlink&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// color of the text&lt;/span&gt;
-        foregroundColor&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#fff&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// terminal background color&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// opacity is only supported on macOS&lt;/span&gt;
-        backgroundColor&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#000&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// terminal selection color&lt;/span&gt;
-        selectionColor&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;rgba(248,28,229,0.3)&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// border color (window, tabs)&lt;/span&gt;
-        borderColor&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#333&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// custom CSS to embed in the main window&lt;/span&gt;
-        css&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// custom CSS to embed in the terminal window&lt;/span&gt;
-        termCSS&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// set custom startup directory (must be an absolute path)&lt;/span&gt;
-        workingDirectory&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// if you&apos;re using a Linux setup which show native menus, set to false&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// default: `true` on Linux, `true` on Windows, ignored on macOS&lt;/span&gt;
-        showHamburgerMenu&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// set to `false` (without backticks and without quotes) if you want to hide the minimize, maximize and close buttons&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// additionally, set to `&apos;left&apos;` if you want them on the left, like in Ubuntu&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// default: `true` (without backticks and without quotes) on Windows and Linux, ignored on macOS&lt;/span&gt;
-        showWindowControls&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// custom padding (CSS format, i.e.: `top right bottom left`)&lt;/span&gt;
-        padding&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;12px 14px&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// the full list. if you&apos;re going to provide the full color palette,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// including the 6 x 6 color cubes and the grayscale map, just provide&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// an array here instead of a color map object&lt;/span&gt;
-        colors&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-            black&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#000000&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            red&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#C51E14&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            green&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#1DC121&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            yellow&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#C7C329&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            blue&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#0A2FC4&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            magenta&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#C839C5&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            cyan&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#20C5C6&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            white&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#C7C7C7&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            lightBlack&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#686868&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            lightRed&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#FD6F6B&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            lightGreen&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#67F86F&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            lightYellow&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#FFFA72&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            lightBlue&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#6A76FB&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            lightMagenta&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#FD7CFC&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            lightCyan&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#68FDFE&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            lightWhite&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#FFFFFF&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            limeGreen&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#32CD32&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            lightCoral&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#F08080&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// the shell to run when spawning a new session (i.e. /usr/local/bin/fish)&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// if left empty, your system&apos;s login shell will be used by default&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;//&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// Windows&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// - Make sure to use a full path if the binary name doesn&apos;t work&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// - Remove `--login` in shellArgs&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;//&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// Windows Subsystem for Linux (WSL) - previously Bash on Windows&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// - Example: `C:\\Windows\\System32\\wsl.exe`&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;//&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// Git-bash on Windows&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// - Example: `C:\\Program Files\\Git\\bin\\bash.exe`&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;//&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// PowerShell on Windows&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;//&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// Cygwin&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// - Example: `C:\\cygwin64\\bin\\bash.exe`&lt;/span&gt;
-        shell&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// for setting shell arguments (i.e. for using interactive shellArgs: `[&apos;-i&apos;]`)&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// by default `[&apos;--login&apos;]` will be used&lt;/span&gt;
-        shellArgs&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;--login&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// for environment variables&lt;/span&gt;
-        env&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// Supported Options:&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;//  1. &apos;SOUND&apos; -&gt; Enables the bell as a sound&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;//  2. false: turns off the bell&lt;/span&gt;
-        bell&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;SOUND&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// An absolute file path to a sound file on the machine.&lt;/span&gt;
-                &lt;span class=&quot;token comment&quot;&gt;// bellSoundURL: &apos;/path/to/sound/file&apos;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard&lt;/span&gt;
-        copyOnSelect&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH&lt;/span&gt;
-        defaultSSHApp&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// selection is present (`true` by default on Windows and disables the context menu feature)&lt;/span&gt;
-        quickEdit&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// choose either `&apos;vertical&apos;`, if you want the column mode when Option key is hold during selection (Default)&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// or `&apos;force&apos;`, if you want to force selection regardless of whether the terminal is in mouse events mode&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// (inside tmux or vim with mouse mode enabled for example).&lt;/span&gt;
-        macOptionSelectionMode&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;vertical&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// Whether to use the WebGL renderer. Set it to false to use canvas-based&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// rendering (slower, but supports transparent backgrounds)&lt;/span&gt;
-        webGLRenderer&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// keypress required for weblink activation: [ctrl|alt|meta|shift]&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// todo: does not pick up config changes automatically, need to restart terminal :/&lt;/span&gt;
-        webLinksActivationKey&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// if `false` (without backticks and without quotes), Hyper will use ligatures provided by some fonts&lt;/span&gt;
-        disableLigatures&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// set to true to disable auto updates&lt;/span&gt;
-        disableAutoUpdates&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// set to true to enable screen reading apps (like NVDA) to read the contents of the terminal&lt;/span&gt;
-        screenReaderMode&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// set to true to preserve working directory when creating splits or tabs&lt;/span&gt;
-        preserveCWD&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;// for advanced config flags please refer to https://hyper.is/#cfg&lt;/span&gt;
-
-        opacity &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0.999&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;// a list of plugins to fetch and install from npm&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;// format: [@org/]project[#version]&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;// examples:&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;//   `hyperpower`&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;//   `@company/project`&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;//   `project#1.0.1`&lt;/span&gt;
-    plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-        &lt;span class=&quot;token string&quot;&gt;&apos;hypercwd&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token comment&quot;&gt;//&apos;hyper-statusline&apos;,&lt;/span&gt;
-        &lt;span class=&quot;token string&quot;&gt;&apos;hyper-quit&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token string&quot;&gt;&apos;hyper-opacity&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token string&quot;&gt;&apos;hyper-tab-icons&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token string&quot;&gt;&apos;hyper-materialshell&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token string&quot;&gt;&apos;hyperborder&apos;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-
-    hyperBorder &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        borderColors &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;#e154c3&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;#e154c3&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        borderWidth &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;3px&apos;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-
-    &lt;span class=&quot;token comment&quot;&gt;// in development, you can create a directory under&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;// `~/.hyper_plugins/local/` and include it here&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;// to load it and avoid it being `npm install`ed&lt;/span&gt;
-    localPlugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    keymaps&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;// Example&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;// &apos;window:devtools&apos;: &apos;cmd+alt+o&apos;,&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Github Blog - Borderless Blog Theme]]></title><description><![CDATA[본 블로그를 이루고 있는 테마에 대해 소개하고자 한다. 지금까지 나는 tistory, velog 등 쉽고 빠르게 접근할 수 있는 블로그 서비스들을 개인 저장소겸 블로그로 이용해왔다. 그러던 중에 맥을 사용하게 돼서 하이퍼 터미널 검색 도중 백준호님의…]]></description><link>https://chaa822.github.io/introduce-blog/</link><guid isPermaLink="false">https://chaa822.github.io/introduce-blog/</guid><pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f4a3b995d9d1a06dbe98d630f348e6e4/efb68/screenshot1.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABYklEQVQoz62S32rCMBTG83xjDzHYSyjiYGPPIV6OvclG7nVsav+lrk2aTpGmbaLZOSHVTpDdeOCjTc7hO79+lHzO5zdZnr0WRTnhQk4j9j2NWeaUpLlTnGbuvlPXd+cknQYxm0RB9PI1m9+SOI4f7ZWKReEzYSwdNG1r27ZVcKc77fd7nee5zrJMl+WPVkrpqqp0Xde6P+dVo2HC2Iik6/UQD03TYOMA5bbhs1LKgoHVWuNCJ3w/+L4XlnGEjI0J53zoDbRvOkNjjOVc2LIsLZAdhQvsmSGOO8IkGRMp5dBH8McQn/CZR/UJLxlCPCfDc0LI0BFyIex2u7UKyP4jLIrisuE5IZohIUZxyVAI4QwHfqDBcH3ABgsIDRCaQkojZWl2u51RqjbdXE+NNxwRCP3hWv8hwD2RKIruIKOPzWbzBqIoOFNYRJfLFV0slnS1CmgQBDQMQwoUtJvr6R00g/79L4EQQOGqetf0AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;screenshot1&quot;
-        title=&quot;screenshot1&quot;
-        src=&quot;/static/f4a3b995d9d1a06dbe98d630f348e6e4/fcda8/screenshot1.png&quot;
-        srcset=&quot;/static/f4a3b995d9d1a06dbe98d630f348e6e4/12f09/screenshot1.png 148w,
-/static/f4a3b995d9d1a06dbe98d630f348e6e4/e4a3f/screenshot1.png 295w,
-/static/f4a3b995d9d1a06dbe98d630f348e6e4/fcda8/screenshot1.png 590w,
-/static/f4a3b995d9d1a06dbe98d630f348e6e4/efc66/screenshot1.png 885w,
-/static/f4a3b995d9d1a06dbe98d630f348e6e4/c83ae/screenshot1.png 1180w,
-/static/f4a3b995d9d1a06dbe98d630f348e6e4/efb68/screenshot1.png 2032w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;본 블로그를 이루고 있는 테마에 대해 소개하고자 한다.&lt;/p&gt;
-&lt;p&gt;지금까지 나는 tistory, velog 등 쉽고 빠르게 접근할 수 있는 블로그 서비스들을 개인 저장소겸 블로그로 이용해왔다.&lt;/p&gt;
-&lt;p&gt;그러던 중에 맥을 사용하게 돼서 하이퍼 터미널 검색 도중 백준호님의 블로그를 구경하게 됐다.&lt;/p&gt;
-&lt;p&gt;블로그가 하나부터 열까지 마음에 쏙 들어서 링크를 타고 깃허브에 갔더니 테마를 쉽게 사용할 수 있도록 &lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;문서화&lt;/a&gt;까지 해놓으신걸 보고, 블로그를 만들게 되었다.&lt;/p&gt;
-&lt;p&gt;테마를 적용하고 싶다면 상기 링크의 문서를 참고하여 백준호님의 &lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github repository&lt;/a&gt;에서 Fork/Clone 해서 적용할 수 있다.&lt;/p&gt;
-&lt;p&gt;이 테마를 공유해주신 백준호님에게 감사의 말씀 드리고 싶다.&lt;/p&gt;
-&lt;br/&gt;
-&lt;br/&gt;
-&lt;p&gt;적용하면서 documents에서 찾을 수 없었던 내용이 있는데&lt;/p&gt;
-&lt;p&gt;나는 repository의 이름, _config.js를 설정하고 deploy했더니 아래와 같이 블로그가 안나오고 README가 나왔다 -.-&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a54f22136fcf49c10435c19450f145a9/efb68/screenshot2.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABmUlEQVQoz62Ry0rDQBRA8zP2YVpbqIhSutOF4kcI/kSlKCh+R8lS/ARXLV1VBLFPbTd9iKZtHk1bZybOJNeZJJU+EF144XCZe+cebjJSKpk4Smcyt/sHh/ndvbQSCkcVWZaVeCzm5XBkU4lE/Sx6q2yEIkp8K5lPbe/cyLHEsVQsFi9HIw1a7Ta0Wm2oNxpQKj/BXenRy9VqDSqVKtRqdWg0mmuI+83mM6jqAAqF4rWEMc6CH5hDBVNEqWog+oE/KSaEIoSpG/R+gAiBbZOcpGnamTg4jkM5rus4MJ5ieNNmQCkTdQ/GGFDOYg56fMRhwqHr+rlkGIYndF2X+skFTTfgXR3CdDYDQggghLicQnDvG5gPAHhC0zSXhUETNHMKndchqIMRWNbE22QuWIxA/LvQMHTodjveZmJDIVzdzr/6R+GQv7puWlzkrmyztF9wXhdmgwGbwwSE2AzblGFMmPjh87oIvjFDhDJk84cI6mLW/zIjJ3HrBfxTjMfjK6nX651MJpMXy7LKnIff4Hc5PC/X7znNfr9/+gUWVQ8m+IuxmQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;screenshot2&quot;
-        title=&quot;screenshot2&quot;
-        src=&quot;/static/a54f22136fcf49c10435c19450f145a9/fcda8/screenshot2.png&quot;
-        srcset=&quot;/static/a54f22136fcf49c10435c19450f145a9/12f09/screenshot2.png 148w,
-/static/a54f22136fcf49c10435c19450f145a9/e4a3f/screenshot2.png 295w,
-/static/a54f22136fcf49c10435c19450f145a9/fcda8/screenshot2.png 590w,
-/static/a54f22136fcf49c10435c19450f145a9/efc66/screenshot2.png 885w,
-/static/a54f22136fcf49c10435c19450f145a9/c83ae/screenshot2.png 1180w,
-/static/a54f22136fcf49c10435c19450f145a9/efb68/screenshot2.png 2032w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;혹시나 나와 같이 블로그가 안나오고 README가 나온다면 아래 설정을 확인해 봐야 한다.&lt;/p&gt;
-&lt;h4 id=&quot;repository--settings--pages-이동--branch--develop를-master로-변경&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#repository--settings--pages-%EC%9D%B4%EB%8F%99--branch--develop%EB%A5%BC-master%EB%A1%9C-%EB%B3%80%EA%B2%BD&quot; aria-label=&quot;repository  settings  pages 이동  branch  develop를 master로 변경 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;repository &gt; settings &gt; Pages 이동 : branch &gt; develop를 master로 변경&lt;/h4&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b059288d805c6ee755adbc03384930ef/159fb/screenshot3.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAB9ElEQVQ4y41TXW/bMAz0//9vfRm2bliBrUCbxHJkWbasb1k3Uq6dAtvDBBwYKOKRx6O7lBKsc+BTa20x5wwp7xBCwHuP/zqcS+h8CFitPcnoFqVsGLSHnAz0PMMR6bpawgprGRbLYloeR2tdy6+NkB73vYDWGtu2NcJYKl5m4Id0+C4MnsWCbxS/3jO+DAnPY8arKfhN+LXs8XUFdAK6ECMmPZ9V+KRccBkXKJdOjA0F0tI4XIYKtRGYDCyEOVUEaqRjKUIMO9mH6lIKRjliGO5YSLKUEkopGGPgSHIKHi4UelexJz3G1SSP9PgxQzKFCG/9gJ4K8fwWs9K8HP0OCGnDdj6t5+x2T4hQaYPbrW+S2YxMchk3IrvQPZNFGksg87i4ixtSqf8wee+0G8lJpaZGEmP6IMzUoWgdMtFBGFr0CETs/X7vqUDM9dycjh8yoVn3dTgkcIL/IGO507zAkHnOeTItg/eXwSPgjs+1YanD/d6MOFrn9dFEoCaNSEn839H5I+bH3OsnQq7Ia7Pv4ONrsZYJFWZyWetP4ELz2mbrvWsKCpEfpxH2Yl/sg2wjG9/eI96uEy5C4ipGMune0A8S70JBagvjMxbaT4ZxsXXf/e0UmttPTxk/af1frhqXYcYgFQRhOKAMRhMxLuQBxcmENts/uz3xzf67hgkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;screenshot3&quot;
-        title=&quot;screenshot3&quot;
-        src=&quot;/static/b059288d805c6ee755adbc03384930ef/fcda8/screenshot3.png&quot;
-        srcset=&quot;/static/b059288d805c6ee755adbc03384930ef/12f09/screenshot3.png 148w,
-/static/b059288d805c6ee755adbc03384930ef/e4a3f/screenshot3.png 295w,
-/static/b059288d805c6ee755adbc03384930ef/fcda8/screenshot3.png 590w,
-/static/b059288d805c6ee755adbc03384930ef/efc66/screenshot3.png 885w,
-/static/b059288d805c6ee755adbc03384930ef/159fb/screenshot3.png 1019w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;</content:encoded></item></channel></rss>
