@@ -3,7 +3,7 @@ title: 더 자바, Java8 - 자바에서 제공하는 함수형 인터페이스
 date: 2022-05-20
 tags:
 - TheJava-Java8
-  keywords:
+keywords:
 - 더 자바
 - Java8
 ---
