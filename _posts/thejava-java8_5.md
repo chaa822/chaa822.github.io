@@ -1,6 +1,6 @@
 ---
 title: 더 자바, Java8 - 인터페이스 기본 메소드와 스태틱 메소드
-date: 2022-06-23
+date: 2022-02-16
 tags:
 - TheJava-Java8
 keywords:

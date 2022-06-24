@@ -1,6 +1,6 @@
 ---
 title: 더 자바, Java8 - 람다 표현식
-date: 2022-05-20
+date: 2022-02-13
 tags:
 - TheJava-Java8
 keywords:

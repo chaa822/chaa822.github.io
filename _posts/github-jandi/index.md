@@ -1,6 +1,6 @@
 ---
 title: Github 잔디가 적용되지 않을 때 (git name 초기화)
-date: 2022-02-12
+date: 2022-02-06
 tags:
 - github
 keywords:
