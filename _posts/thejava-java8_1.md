@@ -9,7 +9,7 @@ keywords:
 ---
 
 인터페이스 생성
-다음과 같이 추상 메서드가 딱 하나만 존재하면, 함수형 인터페이스라고 정의
+다음과 같이 추상 메서드가 딱 하나만 존재하면, 함수형 인터페이스라고 정의한다.
 ```Java
 public interface RunSomething {
     
@@ -51,8 +51,6 @@ public interface RunSomething {
 <br/>자바가 기본적으로 제공하는 어노테이션인 @FunctionalInterface를 사용하여 좀 더 견고하게 사용할 수 있다.
 (추상 메서드가 2개 이상일 경우 오류를 노출함)
 
-
-<br/>를 사용할 수 있다.
 ```Java
 @FunctionalInterface
 public interface RunSomething {
@@ -71,7 +69,7 @@ public interface RunSomething {
 ```
 
 RunSomething 인터페이스를 구현해보자.
-<br/>위와 같은 형태를 익명 내부 클래스(anonymous inner class)라고 한다.
+<br/>아래와 같은 형태를 익명 내부 클래스(anonymous inner class)라고 한다.
 ```Java
 public class Foo {
     public static void main(String[] args) {
@@ -114,9 +112,9 @@ public class Foo {
 
 위와 같이 람다 표현식을 사용하면 마치 다른 언어와 같이 함수를 정의한 것으로 보일 수 있지만
 <br/>실제로는 함수형 인터페이스를 인라인으로 구현한 특수한 형태의 오브젝트이다.
-<br/>(함수를 First class object로 사용할 수 있다.)
 
 또한 함수를 파라미터로 받는다거나, 함수가 함수를 리턴하는 것이 가능하다.
+<br/>(함수를 First class object로 사용할 수 있다.)
 
 <br/>위에서 선언한 추상 메서드인 doIt의 리턴 값을 int로 변경해보자.
 ```Java
@@ -149,7 +147,7 @@ public class Foo {
 
 ```
 
-그런데 아래와 같이 리턴 값이 보장해주지 못하는 상황이 발생할 가능성이 있다면 (여지가 있다면)
+그런데 아래와 같이 리턴 값이 보장해주지 못하는 상황이 발생할 가능성이 있다면
 <br/>함수형 프로그래밍이(퓨어 함수)라고 판단할 수 없다.
 <br/>
 <br/>
@@ -195,8 +193,6 @@ public class Foo {
     }
 }
 ```
-
-
 
 출처 :
 <br/> 인프런 강의 - 더 자바, Java 8 (백기선)
