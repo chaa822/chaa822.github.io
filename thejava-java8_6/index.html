@@ -659,15 +659,25 @@
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <p>Java8 이전
+<br/>
 인터페이스 생성 -> a, b, c 함수 선언
+<br/>
 인터페이스를 구현하는 추상 클래스 (abstract class) 생성 -> a, b, c 함수 구현
+<br/>
 이유 : 추상 클래스를 상속 받아 구현하는 클래스에서 a, b, c 함수 중에 원하는 것만 골라서 구현할 수 있도록 편의성 제공
+<br/>
 (필요 없다면 구현 X)</p>
 <p>Java8 이후
+<br/>
 인터페이스에서 기본(default) 메서드를 사용해서 a, b, c 함수를 구현해 놓고
-추상 클래스 없이, 인터페이스를 직접 implements하는 방식</p>
-<p>ex) WebMvcConfigurer.class, WebMvcConfigurerAdapter.class
+<br/>
+추상 클래스 없이, 인터페이스를 직접 implements하는 방식
+<br/>
+<br/>
+ex) WebMvcConfigurer.class, WebMvcConfigurerAdapter.class
+<br/>
 자바8 이전에는 WebMvcConfigurer에서 정의하고 WebMvcConfigurerAdapter에서 구현하였으나
+<br/>
 WebMvcConfigurer에서 default 메서드로 변경된 후 WebMvcConfigurerAdapter가 Deprecated되었다.</p>
 <p>출처 :
 <br/> 인프런 강의 - 더 자바, Java 8 (백기선)
