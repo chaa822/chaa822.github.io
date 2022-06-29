@@ -123,9 +123,25 @@ public boolean isPrime4(int N){
 	for(int i = 3; i <= Math.sqrt(N); i += 2){
 		if( N % i == 0 ){
 			count++;
-			// break를 걸거나, return false로 빠져나와도 된다.
 		}
 	}
 	return count == 0;
+}
+```
+
+여기서 count 변수를 사용하지 않고 조금 더 간결하게 변경하면 다음과 같다.
+```Java
+public boolean isPrime5(int N){
+	
+	if( N == 1 ) return false;
+	else if( N == 2 ) return true;
+	else if( N % 2 == 0 ) return false;
+	
+	for(int i = 3; i <= Math.sqrt(N); i += 2){
+		if( N % i == 0 ){
+			return false;
+		}
+	}
+	return true;
 }
 ```
