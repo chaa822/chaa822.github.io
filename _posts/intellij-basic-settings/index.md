@@ -15,6 +15,12 @@ keywords:
 * 프로그램 실행 시 프로젝트 선택 창 노출하도록
   <br/>Settings → Appearance > System Settings → Reopen projects on startup
 
+#### 코드 스타일
+* 들여쓰기 - 탭 사용
+  <br/>Settings → Editor → Code Style → Java → Use tab character 체크, Smart tabs 체크 해제
+  
+
+
 #### Spring 
 * Gradle 사용 시 
   <br/>Build and run using, Run tests using → IntelliJ IDEA
