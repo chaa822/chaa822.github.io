@@ -13,7 +13,7 @@ keywords:
 ![](problem.png)
 
 
-_**Java풀이**_
+_**Java 풀이**_
 ```Java
 class Solution {
     public int[] twoSum(int[] nums, int target) {    
@@ -31,7 +31,7 @@ class Solution {
 }
 ```
 
-_**Javascript풀이**_
+_**Javascript 풀이**_
 ```javascript
 var twoSum = function(nums, target) {
     let answer = [];
