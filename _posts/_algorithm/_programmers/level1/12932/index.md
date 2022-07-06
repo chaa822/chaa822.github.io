@@ -13,6 +13,7 @@ keywords:
 
 ![](problem.png)
 
+_**Java 풀이**_
 ```java
 import java.util.Arrays;
 
@@ -41,7 +42,7 @@ class Solution {
     }
 }
 ```
-
+_**JavaScript 풀이**_
 ```javascript
 function solution(n) {
     var answer = [];    
