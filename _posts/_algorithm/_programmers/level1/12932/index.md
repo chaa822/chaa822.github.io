@@ -11,7 +11,7 @@ keywords:
 
 문제 [링크](https://school.programmers.co.kr/learn/courses/30/lessons/12932)
 
-![](problem.png)
+![](screenshot.png)
 
 _**Java 풀이**_
 ```java
