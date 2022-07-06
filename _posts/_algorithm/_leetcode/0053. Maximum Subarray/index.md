@@ -13,7 +13,7 @@ keywords:
 ![](problem.png)
 
 
-_**Java풀이**_
+_**Java 풀이**_
 ```java
 class Solution {
     public int maxSubArray(int[] nums) {
@@ -28,7 +28,7 @@ class Solution {
 }
 ```
 
-_**Javascript풀이**_
+_**Javascript 풀이**_
 ```javascript
 var maxSubArray = function(nums) {
     let max = nums[0];
