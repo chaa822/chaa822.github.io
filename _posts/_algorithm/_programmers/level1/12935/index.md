@@ -1,5 +1,5 @@
 ---
-title: Programmers - 제일 작은 수 제거하기
+title: Programmers - 제일 작은 수 제거하기 (Java)
 date: 2022-03-11
 tags:
 - Algorithm
