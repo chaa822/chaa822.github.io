@@ -1,8 +1,8 @@
 module.exports = {
   /** Site MetaData (Required all)*/
   title: `Dev.Wanted`,                             // (* Required)
-  description: `Jaeoh Jeong's Development Blog`,  // (* Required)
-  author: `Jaeoh Jeong`,                          // (* Required)
+  description: `JAEOH JEONG's Development Blog`,  // (* Required)
+  author: `JAEOH JEONG`,                          // (* Required)
   language: 'ko-KR',                              // (* Required) html lang, ex. 'en' | 'en-US' | 'ko' | 'ko-KR' | ...
   siteUrl: 'https://chaa822.github.io',                           // (* Required)
 
@@ -12,8 +12,8 @@ module.exports = {
     // If the file does not exist, it is replaced by a random image.
 
   /** Home > Bio information*/
-  comment: 'Web Back-end Developer.',
-  name: 'Jaeoh Jeong',
+  comment: 'Back-end Developer.',
+  name: 'JAEOH JEONG',
   company: '',
   location: 'Korea',
   email: 'chaa822@naver.com',
