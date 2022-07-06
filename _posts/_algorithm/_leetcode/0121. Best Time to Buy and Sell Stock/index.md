@@ -34,7 +34,7 @@ class Solution {
 }
 ```
 
-**_Javascript풀이_**
+**_Javascript 풀이_**
 ```javascript
 
 var maxProfit = function(prices) {
