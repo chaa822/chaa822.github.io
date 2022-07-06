@@ -12,7 +12,7 @@ keywords:
 
 ![](problem.png)
 
-_**Java풀이**_
+_**Java 풀이**_
 ```java
 class Solution {
     public int getSum(int a, int b) {
@@ -21,7 +21,7 @@ class Solution {
 }
 ```
 
-_**Javascript풀이**_
+_**Javascript 풀이**_
 ```javascript
 var getSum = function(a, b) {
     return a+b;
