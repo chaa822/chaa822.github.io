@@ -1,5 +1,5 @@
 ---
-title: Programmers - 로또의 최고 순위와 최저 순위
+title: Programmers - 로또의 최고 순위와 최저 순위 (Java)
 date: 2022-03-10
 tags:
 - Algorithm
