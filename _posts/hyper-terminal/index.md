@@ -2,7 +2,7 @@
 title: Hyper Terminal
 date: 2022-01-07
 tags:
-- hyper
+- settings
 keywords:
 - Hyper
 - Hyper Terminal
