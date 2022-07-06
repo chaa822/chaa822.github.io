@@ -3,7 +3,7 @@ title: Programmers - 정수 제곱근 판별
 date: 2022-03-10
 tags:
 - Algorithm
-  keywords:
+keywords:
 - Programmers
 - 프로그래머스
 - 정수 제곱근 판별
