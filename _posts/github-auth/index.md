@@ -35,7 +35,3 @@ npm ERR! This is probably not a problem with npm. There is likely additional log
 아이디 패스워드 방식이 아닌 토큰 방식으로 변경 됐다고 한다.
 
 [여기](https://wotres.tistory.com/entry/Github-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0%EB%B2%95-Authentication-failed-for-use-a-personal-access-token-instead)에 나온 방식대로 토큰을 생성한 뒤, 유저아이디/생성한 토큰을 입력하면 정상적으로 배포된다.
-
-<!--
-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
--->
