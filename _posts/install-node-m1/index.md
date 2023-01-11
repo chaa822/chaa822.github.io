@@ -40,15 +40,32 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 ```
 
-#### 낮은 버전의 Node 설치 (여기선 14)
+#### 변경된 내용을 적용 (source)
 ```bash
-nvm install 14.17.0
+source ~/.zshrc
 ```
 
-설치가 되고, 아래와 같이 버전이 정상적으로 나오면 끝이다.
+#### nvm 설치가 정상적으로 됐는지 버전 확인
+```bash
+nvm -v
+0.38.0
+```
+
+#### 낮은 버전의 Node 설치 (여기선 14)
+```bash
+nvm install 14.16.0
+```
+
+#### nvm의 기본 값을 14버전으로 한다.
+```
+nvm use v14
+nvm alias default v14
+```
+
+#### 설치가 되고, 아래와 같이 버전이 정상적으로 나오면 끝이다.
 ```bash
 node -v
-v14.17.0
+v14.16.0
 ```
 
 출처 :
