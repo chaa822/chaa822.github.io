@@ -18,6 +18,14 @@ keywords:
 #### 코드 스타일
 * 들여쓰기 - 탭 사용
   <br/>Settings → Editor → Code Style → Java → Use tab character 체크, Smart tabs 체크 해제
+
+#### Usage, New 마크 제거
+* 에디터 내 Usage, New 마크 안보이게
+  <br/>Settings → Editor → Inlay hints → Code vision 체크 해제
+
+#### 자동 완성 (ctrl + space)
+* 에디터 내에서 자동 완성이 안될 때
+  <br/>Mac 환경설정 → 키보드 → 단축키탭 → 입력소스 → 이전 입력 소스 선택 체크 해제
   
 
 
